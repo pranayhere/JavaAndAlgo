@@ -1,0 +1,41 @@
+package com.pranay.GeeksForGeeks;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class PilesOfBoxes {
+
+	public static void main(String[] args) {
+		List<Integer> pilesOfBoxes = new ArrayList<Integer>();
+		pilesOfBoxes.add(4);
+		pilesOfBoxes.add(5);
+		pilesOfBoxes.add(5);
+		pilesOfBoxes.add(2);
+		pilesOfBoxes.add(4);
+		
+		int steps = countSteps(pilesOfBoxes);
+	}
+
+	private static int countSteps(List<Integer> pilesOfBoxes) {
+		Map<Integer, Integer> tm = new TreeMap<Integer, Integer>(Collections.reverseOrder());
+		
+		for (Integer box : pilesOfBoxes) {
+			int count = 1;
+			if(tm.containsKey(box)) {
+				count = tm.get(box);
+				count++;
+				tm.put(box, count);
+			}
+			tm.put(box, count);
+		}
+		
+		System.out.println(tm.keySet());
+		
+		tm.forEach((k,v) -> System.out.println("Key = "+ k + ", Value = " + v)); 
+		return 0;
+	}
+}

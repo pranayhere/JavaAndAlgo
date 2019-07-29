@@ -1,0 +1,25 @@
+package com.pranay.GeeksForGeeks;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CircularTrail {
+
+	public static void main(String[] args) {
+		int n = 10;
+		int m = 4;
+		int[] spots = {1, 5, 10, 5};
+		int mostVisited = mostVisitedSpot(n, m, spots);
+	}
+
+	private static int mostVisitedSpot(int n, int m, int[] spots) {
+		Map<Integer, Integer> hm = new HashMap<Integer, Integer>();
+		for (int i : spots) {
+			if (i == spots[0]) continue;
+				continue;
+			System.out.println(i);
+		}
+		return 0;
+	}
+
+}

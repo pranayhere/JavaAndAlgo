@@ -1,0 +1,21 @@
+package com.pranay.GeeksForGeeks;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Knapsack {
+	public static void main(String[] args) {
+		List<Integer> bundleQuantities = new ArrayList<Integer>();
+		collection.add(1);
+		collection.add(2);
+		collection.add(3);
+		collection.add(4);
+		
+		List<Integer> bundleCosts = new ArrayList<Integer>();
+		collection.add(1);
+		collection.add(2);
+		collection.add(3);
+		collection.add(4);
+		
+	}
+}

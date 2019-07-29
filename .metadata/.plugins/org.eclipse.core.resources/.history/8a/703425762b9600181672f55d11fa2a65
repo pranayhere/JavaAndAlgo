@@ -1,0 +1,55 @@
+package com.pranay.GeeksForGeeks;
+
+public class nykaa2 {
+
+	static int flag;
+	static int[] num = new int[6];
+	static boolean[] vis = new boolean[6];
+	public static void main(String[] args) {
+		int[][] input = {
+				{1,2,3,4,5},
+	            {0,0,0,0,0},
+	        };
+	        
+	        for (int[] in : input) {
+	        	if (in[0] == 0 && in[1] == 0 && in[2] == 0 && in[3] == 0 && in[4] == 0)
+	        		break;
+	        	
+	            flag = 0;
+	            for (int i : in) {
+	            	System.out.println(i);
+	                dfs(1, i);
+	            }
+	            if (flag == 1)
+	                System.out.println("Possible!");
+	            else
+	                System.out.println("Not Possible");
+	        }
+
+	}
+
+	static void dfs(int cur , int sum)
+	{
+		System.out.print(cur);
+		System.out.println(sum);
+		
+	  int i;
+	  if(sum == 23 && cur ==5)
+	  {
+	       flag = 1;
+	       return ;
+	  }
+	  else{
+	    for(i = 0 ; i < 5 ; i++){
+	       if(!vis[i]){
+	           vis[i] = true ;
+	           dfs(cur + 1 , sum + num[i]) ;
+	           dfs(cur + 1 , sum * num[i]) ;
+	           dfs(cur + 1 , sum - num[i]) ;
+	           vis[i] = false;
+	       }
+	    }
+	 }
+
+	}
+}

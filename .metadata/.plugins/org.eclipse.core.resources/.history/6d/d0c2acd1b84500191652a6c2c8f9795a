@@ -1,0 +1,21 @@
+package com.pranay.GeeksForGeeks;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class RansomNote {
+	public static void main(String[] args) {
+		String[] magazine = {"give", "me", "one", "grand", "today", "night"};
+		String[] note = {"give", "one", "grand", "today"};
+		
+		String matches = checkMagazine(magazine, note);
+	}
+
+	private static String checkMagazine(String[] magazine, String[] note) {
+		Map<String, Integer> hm = new HashMap<String, Integer>();
+		for (int str: magazine) {
+			
+		}
+		return null;
+	}
+}

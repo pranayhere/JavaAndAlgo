@@ -1,0 +1,7 @@
+package com.pranay.GeeksForGeeks;
+
+public class HackerCards {
+	public static void main(String[] args) {
+		List<Integer> collection = ArrayList<Integer>(); 
+	}
+}

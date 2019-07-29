@@ -1,0 +1,26 @@
+package com.pranay.GeeksForGeeks;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Knapsack {
+	public static void main(String[] args) {
+		List<Integer> bundleQuantities = new ArrayList<Integer>();
+		bundleQuantities.add(20);
+		bundleQuantities.add(19);
+		
+		List<Integer> bundleCosts = new ArrayList<Integer>();
+		bundleCosts.add(24);
+		bundleCosts.add(20);
+		
+		int n = 50;
+		
+		int ans = budgetShopping(n, bundleQuantities, bundleCosts);
+		System.out.println(ans);
+	}
+
+	public static int budgetShopping(int n1, List<Integer> bundleQuantities, List<Integer> bundleCosts) {
+		
+		return 0;
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;DesignPatterns/src/AbstractFactory&apos;&#x0A;- Original project: &apos;DesignPatterns&apos;&#x0A;- Destination element: &apos;DesignPatterns/src/AbstractFactory&apos;&#x0A;- Original elements:&#x0A;     FactoryPattern.Rectangle.java&#x0A;     FactoryPattern.Square.java&#x0A;     FactoryPattern.Circle.java" description="Copy compilation units" destination="/src&lt;AbstractFactory" element1="/src&lt;FactoryPattern{Rectangle.java" element2="/src&lt;FactoryPattern{Square.java" element3="/src&lt;FactoryPattern{Circle.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1470305317408" units="3" version="1.0"/>
+</session>

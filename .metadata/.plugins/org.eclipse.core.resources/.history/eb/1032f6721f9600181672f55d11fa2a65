@@ -1,0 +1,24 @@
+package com.pranay.GeeksForGeeks;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Nykaa {	
+	public static void main(String[] args) {
+		int[][] input = {
+			{1,2,3,4,5},
+	   		{0,0,0,0,0},
+		};
+
+		int genUsed = 0;
+		int nPerm = 0;
+		generatePermutations();
+	}
+
+	private static void generatePermutations() {
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,9 @@
+package com.pranay.GeeksForGeeks;
+
+import java.util.List;
+
+public class HackerCards {
+	public static void main(String[] args) {
+		List<Integer> collection = ArrayList<Integer>(); 
+	}
+}

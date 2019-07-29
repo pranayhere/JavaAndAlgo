@@ -1,0 +1,17 @@
+package com.pranay.GeeksForGeeks;
+
+public class SetIntersection {
+
+	public static void main(String[] args) {
+		String s1 = "Hello";
+		String s2 = "World";
+
+		String ans = twoStrings(s1, s2);
+		System.out.println(ans);
+	}
+
+	private static String twoStrings(String s1, String s2) {
+		
+		return null;
+	}
+}

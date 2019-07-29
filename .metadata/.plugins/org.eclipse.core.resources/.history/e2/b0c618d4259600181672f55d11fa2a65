@@ -1,0 +1,35 @@
+package com.pranay.GeeksForGeeks;
+
+public class nykaa2 {
+
+	static int flag;
+	static int[] num = new int[6];
+	static boolean[] vis = new int[6];
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	void dfs(int cur , int sum)
+	{
+
+	  int i;
+	  if(sum == 23 && cur ==5)
+	  {
+	       flag = 1;
+	       return ;
+	  }
+	  else{
+	    for(i = 0 ; i < 5 ; i++){
+	       if(!vis[i]){
+	           vis[i] = 1 ;
+	           dfs(cur + 1 , sum + num[i]) ;
+	           dfs(cur + 1 , sum * num[i] ) ;
+	           dfs(cur + 1 , sum - num[i] ) ;
+	           vis[i] = 0 ;
+	       }
+	    }
+	 }
+
+	}
+}

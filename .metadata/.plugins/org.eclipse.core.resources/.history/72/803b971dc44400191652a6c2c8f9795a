@@ -1,0 +1,7 @@
+package com.pranay.GeeksForGeeks;
+
+public class minimumBribes {
+	public static void main(String[] args) {
+		
+	}
+}

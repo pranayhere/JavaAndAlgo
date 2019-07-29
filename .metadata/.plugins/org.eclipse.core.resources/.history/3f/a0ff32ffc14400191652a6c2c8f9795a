@@ -1,0 +1,24 @@
+package com.pranay.GeeksForGeeks;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class RotateLeft {
+	public static void main(String[] args) {
+		int a[] = {1,2,3,4,5};
+		int d = 2;
+		int[] arr = rotateLeft(a, 3);
+	}
+
+	private static int[] rotateLeft(int[] a, int d) {
+		List<Integer> list = new ArrayList<Integer>(a.length);
+        for (int n : a)
+          list.add(n);
+        
+        System.out.println(list);
+        
+        Collections.rotate(list, d * -1);
+        return list.stream().mapToInt(Integer::intValue).toArray();
+	}
+}

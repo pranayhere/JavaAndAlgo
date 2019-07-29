@@ -1,0 +1,32 @@
+package com.pranay.GeeksForGeeks;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Nykaa {
+
+    static boolean[] flag = new boolean[6];
+    static int[] num = new int[6];
+    static boolean res;
+    
+    
+    public static void main(String[] args) {
+        int[][] input = {
+            {1,2,3,4,5},
+            {0,0,0,0,0},
+        };
+        
+        for (int[] in : input) {
+            res = false;
+            for (int i : in) {
+              System.out.println(i);
+                backTrack(i, 1);
+            }
+        }
+        if (res)
+            System.out.println("Possible!");
+        else
+            System.out.println("Not Possible");
+    }
+
+}

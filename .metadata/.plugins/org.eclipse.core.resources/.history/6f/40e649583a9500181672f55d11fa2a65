@@ -1,0 +1,75 @@
+package com.pranay.GeeksForGeeks;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Nykaa {
+
+	static boolean[] flag = new boolean[6];
+	static int[] num = new int[6];
+	static boolean res;
+	
+	
+	public static void main(String[] args) {
+		int[][] input = {
+				{1,1,1,1,1},
+				{1,2,3,4,5},
+				{0,0,0,0,0},
+		};
+		
+		for (int[] in : input) {
+			res = false;
+			for (int i = 0; i < 5; i++) {
+				flag[i] = true;
+				backTrack(in[i], 1);
+				flag[i] = false;
+			}
+		}
+		if (res)
+			System.out.println("Possible!");
+		else
+			System.out.println("Not Possible");
+	}
+
+	private static void backTrack(int sum, int current) {
+		if(sum == 23 && current ==5) {
+			res = true;  
+			return;
+		} else {
+			for(int i =0; i < 5; i++) {
+				if(!flag[i]) {
+					flag[i] = true;
+					backTrack(current + 1, sum + num[i]);
+					backTrack(current + 1, sum * num[i]);
+					backTrack(current + 1, sum - num[i]);
+					flag[i] = false;
+				}
+			}
+		}
+	}
+
+}
+
+
+//int dfs(int cur , int sum)
+//{
+//
+//  int i;
+//  if(sum == 23 && cur ==5)
+//  {
+//      printf("solved");
+//       flag = 1 ;  return 1;
+//  }
+//  else{
+//    for(i = 0 ; i < 5 ; i++){
+//       if(!vis[i]){
+//           vis[i] = 1 ;
+//           dfs(cur + 1 , sum + num[i]) ;
+//           dfs(cur + 1 , sum * num[i] ) ;
+//           dfs(cur + 1 , sum - num[i] ) ;
+//           vis[i] = 0 ;
+//       }
+//    }
+// }
+//
+//}

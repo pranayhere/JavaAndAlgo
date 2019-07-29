@@ -1,0 +1,17 @@
+package com.pranay.GeeksForGeeks;
+
+public class CircularTrail {
+
+	public static void main(String[] args) {
+		int n = 10;
+		int m = 4;
+		int[] spots = {1, 5, 10, 5};
+		int mostVisited = mostVisitedSpot(spots);
+	}
+
+	private static int mostVisitedSpot(int[] spots) {
+		
+		return 0;
+	}
+
+}

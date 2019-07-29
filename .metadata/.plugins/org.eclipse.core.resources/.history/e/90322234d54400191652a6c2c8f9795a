@@ -1,0 +1,13 @@
+package com.pranay.GeeksForGeeks;
+
+public class minimumBribes {
+	public static void main(String[] args) {
+		int[] q = {2, 1, 5, 3, 4};
+		int count = minimumBribes(q);
+	}
+
+	private static int minimumBribes(int[] q) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

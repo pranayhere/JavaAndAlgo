@@ -1,0 +1,45 @@
+package com.pranay.GeeksForGeeks;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Nykaa {
+
+    static boolean[] vis = new boolean[6];
+    static int[] num = new int[6];
+    static boolean flag;
+    
+    
+    public static void main(String[] args) {
+        int[][] input = {
+            {1,2,3,4,5},
+            {0,0,0,0,0},
+        };
+        
+        for (int[] in : input) {
+            flag = false;
+            for (int i : in) {
+              System.out.println(i);
+                backTrack(1, i);
+            }
+        }
+        if (flag)
+            System.out.println("Possible!");
+        else
+            System.out.println("Not Possible");
+    }
+
+
+	private static void backTrack(int cur, int sum) {
+		int i;
+		if (sum == 23 && cur == 5) {
+			flag = true;
+			return;
+		} else {
+			for (i = 0; i < 5; i++) {
+				
+			}
+		}
+	}
+
+}

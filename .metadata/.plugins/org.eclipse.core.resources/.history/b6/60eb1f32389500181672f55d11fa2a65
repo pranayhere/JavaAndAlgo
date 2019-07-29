@@ -1,0 +1,37 @@
+package com.pranay.GeeksForGeeks;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Nykaa {
+
+	static int[] flag = new int[6];
+	static int[] num;
+	static boolean res;
+	
+	
+	public static void main(String[] args) {
+		int[][] input = {
+				{1,1,1,1,1},
+				{1,2,3,4,5},
+				{0,0,0,0,0},
+		};
+		
+		for (int[] in : input) {
+			res = false;
+			for (int i = 0; i < 5; i++) {
+				flag[i] = 1;
+				backTrack(input[i], 1);
+				flag[i] = 0;
+				if (res)
+					break;
+			}
+			
+		}
+	}
+
+	private static void backTrack(int sum, int current) {
+		
+	}
+
+}

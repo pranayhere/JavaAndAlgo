@@ -1,0 +1,10 @@
+package com.pranay.GeeksForGeeks;
+
+public class matchingStrings {
+	public static void main(String[] args) {
+		String[] strings = {"aba", "baba", "aba", "xzxb"};
+		String[] queries = {"aba", "xzxb", "ab"};
+		
+		
+	}
+}

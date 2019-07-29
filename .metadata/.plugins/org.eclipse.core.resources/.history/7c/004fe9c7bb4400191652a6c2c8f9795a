@@ -1,0 +1,13 @@
+package com.pranay.GeeksForGeeks;
+
+public class RotateLeft {
+	public static void main(String[] args) {
+		int a[] = {1,2,3,4,5};
+		int d = 3;
+		rotateLeft(a, 3);
+	}
+
+	private static void rotateLeft(int[] a, int i) {
+		
+	}
+}

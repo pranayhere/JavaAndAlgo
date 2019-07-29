@@ -1,0 +1,20 @@
+package com.pranay.GeeksForGeeks;
+
+public class ArrayManipulation {
+	public static void main(String[] args) {
+		int n = 5;
+		int m = 3;
+		int[][] queries = {
+				{1, 2, 100},
+				{2, 5, 100},
+				{3, 4, 100}
+		};
+		
+		int maxValue = arrayManipulation(n, queries);
+	}
+
+	private static int arrayManipulation(int n, int[][] queries) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

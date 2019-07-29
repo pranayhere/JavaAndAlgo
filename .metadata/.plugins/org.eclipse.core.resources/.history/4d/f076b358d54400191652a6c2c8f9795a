@@ -1,0 +1,17 @@
+package com.pranay.GeeksForGeeks;
+
+public class minimumBribes {
+	public static void main(String[] args) {
+		int[] q = {2, 1, 5, 3, 4};
+		int count = minimumBribes(q);
+	}
+
+	private static int minimumBribes(int[] q) {
+		for (int i=0; i<q.length; i++) {
+			if((q[i] - (i+1)) > 2) {
+				System.out.println("Too chaotic");
+			}
+		}
+		return 0;
+	}
+}

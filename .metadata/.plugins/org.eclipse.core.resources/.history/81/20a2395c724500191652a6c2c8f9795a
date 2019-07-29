@@ -1,0 +1,7 @@
+package com.pranay.GeeksForGeeks;
+
+public class MinimumSwaps2 {
+	public static void main(String[] args) {
+		
+	}
+}

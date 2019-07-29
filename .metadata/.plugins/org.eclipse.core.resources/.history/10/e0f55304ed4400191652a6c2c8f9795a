@@ -1,0 +1,19 @@
+package com.pranay.GeeksForGeeks;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class matchingStrings {
+	public static void main(String[] args) {
+		String[] strings = {"aba", "baba", "aba", "xzxb"};
+		String[] queries = {"aba", "xzxb", "ab"};
+		
+		int matchCount[] = matchStrings(strings, queries);
+	}
+
+	private static int[] matchStrings(String[] strings, String[] queries) {
+		Map<String, Integer> hm = new HashMap<String, Integer>();
+		
+		return null;
+	}
+}
